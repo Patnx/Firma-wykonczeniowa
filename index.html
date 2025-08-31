@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ups zdarza sie — Wykonczeniowa firma</title>
+  <meta name="description" content="Ups zdarza sie — firma wykonawcza zajmująca się wykończeniami wnętrz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Inter',sans-serif;background:#f4f4f4;color:#111;display:flex;flex-direction:column;min-height:100vh;}
+    header{background:#0b1020;color:#fff;padding:20px;text-align:center;}
+    header h1{margin:0;font-size:2rem;}
+    main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;}
+    .service-card{background:#fff;padding:20px;margin:10px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);max-width:400px;text-align:center;}
+    footer{text-align:center;padding:20px;background:#0b1020;color:#fff;}
+    a.button{display:inline-block;padding:12px 20px;margin-top:20px;background:#58c4ff;color:#0b1020;border-radius:10px;text-decoration:none;font-weight:600;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ups zdarza sie</h1>
+    <p>Firma wykonawcza — wykończenia wnętrz</p>
+  </header>
+  <main>
+    <div class="service-card">
+      <h2>Remonty mieszkań</h2>
+      <p>Kompleksowe wykończenia wnętrz w mieszkaniach i domach.</p>
+    </div>
+    <div class="service-card">
+      <h2>Malowanie i dekoracje</h2>
+      <p>Profesjonalne malowanie ścian, sufitów i dekoracji wnętrz.</p>
+    </div>
+    <div class="service-card">
+      <h2>Podłogi i płytki</h2>
+      <p>Układanie paneli, płytek i innych powierzchni podłogowych.</p>
+    </div>
+    <a class="button" href="mailto:kontakt@upszdarzasie.pl">Skontaktuj się z nami</a>
+  </main>
+  <footer>
+    © <span id="year"></span> Ups zdarza sie. Wszelkie prawa zastrzeżone.
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
